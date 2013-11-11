@@ -13,7 +13,7 @@
 			<select name="integrantes" id="">
 				<option value="-1">Seleccionar</option>
 				<option  value="0">Sebastian Esparza</option>
-				<option  value="1">DiegoNavia</option>
+				<option  value="1">Diego Navia</option>
 				<option  value="2">Francisco Ramirez</option>
 			</select>	
 			<input type="submit" value="Ver" name="btn_enviar">
@@ -28,7 +28,7 @@
 				echo "Escoga una Opcion";	
 			if($nombre==0)
 				echo '
-						<table border="1">
+						<table border="1" id="tablaDiego">
 							<tr>
 								<td><b>Nombre</b></td>
 								<td><b>Edad</b></td>
@@ -47,9 +47,29 @@
 						</table>
 			';
 			if($nombre==1)
-				echo 'Escoga una Opcion';
+				echo '
+						<table border="1">
+							<tr>
+								<td><b>Nombre</b></td>
+								<td><b>Edad</b></td>
+								<td><b>Carrera</b></td>
+								<td><b>Github</b></td>
+								<td><b>Facebook</b></td>
+							</tr>
+							<tr>
+								<td>Diego Navia</td>
+								<td>21</td>
+								<td>Ingeniería civil en Computación</td>
+								<td><a id="color" href="https://github.com/diogoalfa">Github</a></td>
+								<td><a id="color" href="https://www.facebook.com/diogo.again">Facebook</a></td>
+							</tr>
+							<tr ><td colspan="5"><div ><img src="img/fotoMia.jpeg" id="fotoDiego" /></div></td></tr>
+						</table>
+			';
 			if($nombre==2)
 				echo 'Escoga una Opcion';
 		}
 	?>
+        
+        
 </html>
